@@ -2,6 +2,24 @@
 <html lang="en">
 <head>
   <title>bootstrap plants doc</title>
+  <style>
+    table, th, td{
+        border: solid;
+    }
+    th, td {
+        color: blue;
+    }
+    table{
+        border-collapse: collapse;
+        padding: 8px;
+        margin: 15px;
+    }
+    tr:nth-child(even){background-color: rgba(255, 255, 0, 0.137);}
+    tr:hover{background-color: yellow;
+    tr:nth-of-type(1) {background: blue;}
+    }
+    .card{float: left;}
+  </style>    
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -13,6 +31,27 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="plants.html">Interesting Plants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="basic.html">Basic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="advanced.html">Advanced</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <h1> Plants by Srinivasa Raju Sarikonda</h1>
     <div class="container">
         <div class="row">
@@ -33,5 +72,138 @@
         </div>
     </div>
     <p>plant names row had got down to verticle position while decreasing the size</p>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Rhamnus_catharticus_leaves_and_fruit.jpg/220px-Rhamnus_catharticus_leaves_and_fruit.jpg" width="300" class="img-fluid rounded" alt="Rahmnus">
+        <img src="http://cdn.shopify.com/s/files/1/1527/8799/products/Ajuga-reptans-Texas-Tough.i-12990.s-66088.r-1_325cab99-df34-41ea-aeda-76c3af344b5f.jpg?v=1676494176" height="300" width="300" class="img-fluid rounded" alt="Ajuga">
+        <img src="https://cdn.britannica.com/99/123099-050-0DF02D0D/Purpletop-vervain.jpg" height="300" width="300" class="img-fluid rounded" alt="verbena">
+    </div>
+    <div class="container">
+        <img src="http://www.strangewonderfulthings.com/Chilean_guava_Myrtus_Ugni_molinae_3876.jpg" height="300" width="300" class="img-fluid img-thumbnail rounded" alt="ugni">
+        <img src="https://www.gardenia.net/storage/app/public/uploads/images/detail/PPOFUKWnfzGHnZ5BFKtYPqCakE2YzRm9FQ616obY.webp" height="300" width="300" class="img-fluid img-thumbnail rounded" alt="robinia">
+        <img src="https://www.gardenia.net/storage/app/public/uploads/images/detail/EUVZPKIL4Pogl7sVyaXehlTk2NqEbIBlziJ65Jw5.webp" height="300" width="300" class="img-fluid img-thumbnail rounded" alt="Inula">
+    </div>
+    <table class="table table-sm">
+        <caption>List of Plants, Mountains and Lakes</caption>
+        <thead>
+          <tr>
+            <th scope="row">#</th>
+            <th scope="col">Letter</th>
+            <th scope="col">Plant</th>
+            <th scope="col">Mountain</th>
+            <th scope="col">Lake</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>R</td>
+            <td>Rahmnus</td>
+            <td>rambler peak</td>
+            <td>Rana Pratap Sagar Reservoir</td>            
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>A</td>
+            <td>Ajuga</td>
+            <td>Amulet Peak</td>
+            <td>Abashiri</td>    
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>V</td>
+            <td>verbena</td> 
+            <td>vaalserberg</td>
+            <td>Vihar Lake</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>U</td>
+            <td>ugni</td>
+            <td>uludoruk</td>
+            <td>Ubolratana</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>R</td>
+            <td>robinia</td>
+            <td>ranger peak</td>
+            <td>Ranjit Sagar Dam Lake</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>I</td>
+            <td>Inula</td>
+            <td>ishizuchi</td>
+            <td>Indir Sagar Reservoir</td>
+          </tr>
+        </tbody>
+    </table>
+    <div class=" btn-toolbar">
+        <div class="btn-group">
+            <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Rhamnus_catharticus_leaves_and_fruit.jpg/220px-Rhamnus_catharticus_leaves_and_fruit.jpg" class="btn btn-success mr-1" aria-current="page">Rahmnus</a>
+            <a href="http://cdn.shopify.com/s/files/1/1527/8799/products/Ajuga-reptans-Texas-Tough.i-12990.s-66088.r-1_325cab99-df34-41ea-aeda-76c3af344b5f.jpg?v=1676494176" class="btn btn-success mr-1">Ajuga</a>
+            <a href="https://cdn.britannica.com/99/123099-050-0DF02D0D/Purpletop-vervain.jpg" class="btn btn-success mr-1">verbena</a>
+        </div>
+        <div class="btn-group">
+            <a href="http://www.strangewonderfulthings.com/Chilean_guava_Myrtus_Ugni_molinae_3876.jpg" class="btn btn-warning mr-1" aria-current="page">ugni</a>
+            <a href="https://www.gardenia.net/storage/app/public/uploads/images/detail/PPOFUKWnfzGHnZ5BFKtYPqCakE2YzRm9FQ616obY.webp" class="btn btn-warning mr-1">robinia</a>
+        </div>
+        <div class="btn-group">
+            <a href="https://www.gardenia.net/storage/app/public/uploads/images/detail/EUVZPKIL4Pogl7sVyaXehlTk2NqEbIBlziJ65Jw5.webp" class="btn btn-danger mr-1">Inula</a>
+        </div>
+    </div>
+    <br>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="advanced.html">advanced html page</a></li>
+          <li><a class="dropdown-item" href="basic.html">basic html page</a></li>
+        </ul>
+    </div>
+    <br>
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Plant</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your plant">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    <div class="card" style="width: 18rem;">
+        <img src="https://cdn.britannica.com/99/123099-050-0DF02D0D/Purpletop-vervain.jpg" class="card-img-top" alt="verbena">
+        <div class="card-body">
+          <h5 class="card-title">verbena</h5>
+          <p class="card-text">Verbena also known as vervain or verveine, is a genus in the family Verbenaceae. It contains about 150 species of annual and perennial herbaceous.</p>
+          <a href="https://en.wikipedia.org/wiki/Verbena" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="http://www.strangewonderfulthings.com/Chilean_guava_Myrtus_Ugni_molinae_3876.jpg" class="card-img-top" alt="Ugni">
+        <div class="card-body">
+          <h5 class="card-title">Ugni</h5>
+          <p class="card-text">Ugni is a genus of plants in the myrtle family Myrtaceae, described as a genus in 1848.</p>
+          <a href="https://en.wikipedia.org/wiki/Ugni" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://www.gardenia.net/storage/app/public/uploads/images/detail/EUVZPKIL4Pogl7sVyaXehlTk2NqEbIBlziJ65Jw5.webp" class="card-img-top" alt="Inula">
+        <div class="card-body">
+          <h5 class="card-title">Inula</h5>
+          <p class="card-text">Inula is a genus of about 80 species of flowering plants in the family Asteraceae, native to Europe, Asia and Africa</p>
+          <a href="https://en.wikipedia.org/wiki/In" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
 </body>
 </html>
